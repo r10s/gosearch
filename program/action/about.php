@@ -32,6 +32,7 @@ class Action_About extends G_Html
 										<a href="http://jquery.com/">jQuery</a>.
 								  Special Thanks go to
 										<a href="http://yacy.net/">YaCy</a> for the Stoplists.');
+			echo G_Html::renderP('Source code and downloads are available on <a href="https://github.com/r10s/gosearch">Github</a>.');
 			echo G_Html::renderP('Contact: <a href="http://b44t.com/contact">http://b44t.com/contact</a>');
 			
 			/* not yet needed as we currently have no map implementation ...
