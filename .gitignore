@@ -1,0 +1,6 @@
+# ignore data and configuration directories; /config/config-sample.php and /data/.htaccess are added manually
+/config/
+/data/
+
+# ignore private scripts and directories, eg. ftpupload.prv.sh
+*.prv*

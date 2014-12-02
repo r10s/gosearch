@@ -1,0 +1,95 @@
+ 
+/* common */
+body, input, select			{ font-family:Verdana,sans-serif; font-size:13px; }
+body						{ margin:0; line-height:1.4em; }
+
+a							{ text-decoration:none; color:#0040FF; }
+a:hover						{ text-decoration:underline; }
+a:visited					{ color:#800080; }
+
+h1							{ margin:1.7em 0 1em 0; line-height:1em; color:black; }
+h1:first-child				{ margin-top:0; }
+h1, .h1, h2					{ font-family:Trebuchet Ms,sans-serif; font-size:23px; letter-spacing:2px; font-weight:bold; }
+
+p 							{ margin:1em 0; }
+
+.shy, a.shy:visited			{ color: #bbb; }
+
+/* menu main  */
+#mainmenu						{ background:#0088FF; padding:10px 10% 0;						min-width:600px; height:26px;  }
+#mainmenu ul					{ margin:0; padding:0;											list-style-type:none; }
+#mainmenu ul:last-child			{ 																float:right; }
+#mainmenu ul li					{ 																float:left; }
+#mainmenu ul li a				{ background:#0088FF; color:#fff; padding:1px 12px 2px 12px; 	line-height:22px; display:block;  
+								  border-left:1px solid #77BAFF;   border-top:1px solid #77BAFF; text-decoration:none;  }
+#mainmenu ul li:last-child a	{ border-right:1px solid #77BAFF; }
+#mainmenu ul li a:hover			{ text-decoration:none; background:#2993FF; }
+#mainmenu ul li.sel a			{ background:#fff;   border-top:3px solid #FF8409;padding:1px 15px 0px;   color:#000; font-weight:bold; }
+
+/* sub menu / admin menu*/
+#submenu						{ background:linear-gradient(#FFF,#F3F3F3); padding:0px 10% 0; border-bottom:1px solid #CCC; border-top:16px solid #fff;
+																							min-width:600px; height:25px; 		}
+#submenu ul						{ margin:0; padding:0;											list-style-type:none; }
+#submenu ul li					{ 																float:left; }
+#submenu ul li a				{ background:#fff; color:#000; padding:1px 12px 2px 12px; 		line-height:21px; display:block;  
+								  border-left:1px solid #CCC;   border-top:1px solid #CCC; text-decoration:none;  }
+#submenu ul li:last-child a		{ border-right:1px solid #CCC; }
+#submenu ul li a:hover			{ text-decoration:none; background:linear-gradient(#f8f8f8,#fff); }
+#submenu ul li.sel a			{ background:#fff;   border-top:3px solid #FF8409;padding:1px 15px 0px;  border-bottom:1px solid white; color:#000; font-weight:bold; }
+
+/* content */
+#content1 						{ margin:1.6em 10%; clear:both; } 
+
+/* search: formular */
+#search							{ margin-bottom:1.3em; }
+#search form					{ }
+#search form input				{ font-size: 16px;  }
+#search form input[type=text]	{ padding:4px; width:28em; }
+#search form input[type=submit]	{ padding:2px; }
+body.space #search				{ padding:5em 0 6em 0; text-align: center; }
+body.space #search h1 span		{ background: transparent url(logo.png) top left no-repeat; padding-left:72px; font-size: 40px; color: #0088FF; }
+body.space #search .slogan		{ margin-top:2em; }
+
+/* search: zeroclick */ 
+div.zeroclick					{ margin: 1.5em 0; padding: 0.5em; border: 1px solid #999; /*no background color, this would make the result too important compard with others*/ }
+
+/* search: results: title/url/snippet */
+div.sr 						{ margin: 1.7em 0; }
+div.sr div.tt				{ font-size: 16px; text-decoration: underline; }
+div.sr div.url				{ color: #080; padding-bottom: 0.2em; }
+div.sr div.spt				{ padding:0; margin: 0; max-width: 72em; }
+
+/* standard formulars */
+form.std table					{ border-spacing:0; }
+form.std table td				{ vertical-align:top; padding:0 1em 1em 0; }
+form.std table td:first-child	{ white-space:nowrap; }
+form.std input[type=text], 
+form.std input[type=password]
+							{ min-width:20em; }
+form.std textarea			{ min-width:30em; }
+form.std input[type=submit] { min-width:9em; }
+form.std span.rq			{ color:#FF8409; font-weight: bold;  }
+p.err, p.warn				{ border-left: 4px solid #FF8409; padding-left:1em; font-weight: bold;  }
+
+/* standard tables */
+table.grid					{ margin: 1em 0; border-collapse:collapse; border-spacing:0; width:100%; }
+table.grid tr td			{ border-right:1px solid #bbb; border-bottom:1px solid #bbb; vertical-align:top; padding:1em; }
+table.grid tr td:first-child{ padding-left:0;  width:10%; white-space:nowrap; }
+table.grid tr td:last-child	{ padding-right:0; width:90%; border-right:0; }
+table.grid tr:last-child td	{ border-bottom:0; }
+div.scroll					{ height: 13em; width:64em; overflow:scroll; }
+div.scroll pre				{ margin:0; padding:0; }
+
+table.blank					{ margin: 1em 0; border-collapse:collapse; border-spacing:0; }
+table.blank tr td			{ padding: 0 1em 0 0; }
+
+/* maps */
+#ctmap												{ height:250px; }
+.leaflet-container .leaflet-control-attribution		{ background-color:inherit; box-shadow:none; margin:0; }
+.leaflet-container .leaflet-control-attribution a	{ color: black; font-weight: normal; }
+
+/* footer */
+#footer							{ padding:1em 10% 3em 10%; text-align:left; color: #bbb;  clear:both; font-size:11px; clear: both; }
+#footer a						{ color: #bbb; text-decoration: none; }
+#footer a:hover					{ color: #888; text-decoration: underline; }
+body.space #footer				{ text-align: center; }

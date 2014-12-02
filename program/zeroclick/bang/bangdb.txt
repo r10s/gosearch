@@ -1,0 +1,280 @@
+#
+# usage:	!<bang> <destUrl>
+#			with destUrl placeholders:	
+#				{searchTerms} - the query, urlencoded as UTF-8
+#				{searchTerms-ISO-8859-1} - the query, urlencoded as ISO-8859-1
+#			To use different destinations on different languages, bangs can be
+#			followed by a language id; if no language-specific bang is present,
+#			the bangs without language ids are used (if any).
+# links: 	!<bang> !<destBang>
+# The order of the list should be *roughly* alphabetically - it is printed in
+# the given order if the user types !bang
+#
+# TODO: Currently, unknown bangs are routed over duckduckgo.com - if this file
+# is more complete, we should avoid this. 
+#
+################################################################################
+
+!a				!amazon
+!amazon			http://www.amazon.com/s/?url=search-alias%3Daps&field-keywords={searchTerms}
+!amazon[de]		http://www.amazon.de/s/?url=search-alias%3Daps&field-keywords={searchTerms}
+
+!acr			!acronym
+!acronym		http://www.acronymfinder.com/{searchTerms}.html
+
+!alexa			http://www.alexa.com/search?q={searchTerms}
+
+!alt			!alternativeto
+!alto			!alternativeto
+!altto			!alternativeto
+!alternativeto	http://alternativeto.net/SearchResult.aspx?profile=all&search={searchTerms}
+
+!android		!andev
+!andev			https://developer.android.com/index.html#q={searchTerms}
+!androidpit		http://www.androidpit.com/search?st={searchTerms}
+
+!apple			https://www.apple.com/search/?q={searchTerms}
+!applediscuss	https://discussions.apple.com/search.jspa?q={searchTerms}
+!adc			!appledev
+!appledev		https://developer.apple.com/search/index.php?q={searchTerms}
+
+!archive		https://archive.org/search.php?query={searchTerms}
+!ars			http://arstechnica.com/search/?query={searchTerms}
+!ask			http://www.ask.com/web?q={searchTerms}
+
+!b				!bing
+!bi				!bingimages
+!bimages		!bingimages
+!bm				!bingmaps
+!bmaps			!bingmaps
+!bing			http://www.bing.com/search?q={searchTerms}
+!bingimages		http://www.bing.com/images/search?q={searchTerms}&go=&form=QBIL&qs=n
+!bingmaps		http://www.bing.com/maps/?q={searchTerms}
+
+!bd				!baidu
+!baidu			http://www.baidu.com/s?wd={searchTerms}
+
+!bible			http://www.bibleserver.com/search/ESV/{searchTerms}/1
+!bibel			http://www.bibleserver.com/search/LUT/{searchTerms}/1
+
+!blekko			https://blekko.com/ws/{searchTerms}
+
+!c				!cnet
+!cnet			http://www.cnet.com/1770-5_1-0.html?query={searchTerms}
+!chefkoch		http://www.chefkoch.de/rs/s0/{searchTerms}/Rezepte.html
+!chip			http://suche.chip.de/?q={searchTerms}
+!cocoa			!appledev
+!conrad			http://www.conrad.de/ce/de/Search.html?search={searchTerms}
+!cpp			!cplusplus
+!cplusplus		http://www.cplusplus.com/search.do?q={searchTerms}
+!css			https://developer.mozilla.org/en/search?q={searchTerms}
+!ct				!heise
+
+!ddg			!duckduckgo
+!duckduckgo		https://duckduckgo.com/?q={searchTerms}
+
+!debian			http://search.debian.org/cgi-bin/omega?DB=en&P={searchTerms}
+!debianforums	http://forums.debian.net/search.php?keywords={searchTerms}
+!debwiki		https://wiki.debian.org/FrontPage?action=fullsearch&value={searchTerms}
+
+!delicious		https://delicious.com/search/{searchTerms}
+
+!da				!deviantart 
+!deviantart 	http://www.deviantart.com/?q={searchTerms}
+
+!download		http://download.cnet.com/1770-20_4-0.html?searchtype=downloads&query={searchTerms}
+!duden			http://www.duden.de/suchen/dudenonline/{searchTerms}
+
+!eb				!ebay
+!ebay			http://www.ebay.com/sch/items/?_nkw={searchTerms}
+!ebay[de]		http://www.ebay.de/sch/items/?_nkw={searchTerms}
+
+!fb				!facebook
+!facebook		https://www.facebook.com/search/results.php?q={searchTerms}
+!flickr			http://www.flickr.com/search/?q={searchTerms}
+!flickrc		http://www.flickr.com/search/?l=commderiv&q={searchTerms} # creative commons with commercial usage allowed
+
+!g				!google
+!g+				!gplus
+!google			https://www.google.com/search?q={searchTerms}
+!google[de]		https://www.google.de/search?q={searchTerms}
+!googleimages	!gimages
+!gi				!gimages
+!gimages		https://www.google.com/search?tbm=isch&q={searchTerms}&tbs=imgo:1
+!gimages[de]	https://www.google.de/search?tbm=isch&q={searchTerms}&tbs=imgo:1
+!gm				!gmaps
+!gmaps			https://maps.google.com/maps?q={searchTerms}
+!gmaps[de]		https://maps.google.de/maps?q={searchTerms}
+!gplay			https://play.google.com/store/search?q={searchTerms}
+!gplus			https://plus.google.com/s/{searchTerms}
+
+!golang			http://golang.org/search?q={searchTerms}
+
+!golem			http://suche.golem.de/search.php?q={searchTerms}
+
+!gh				!github
+!github			https://github.com/search?q={searchTerms}
+!gist			https://gist.github.com/search?q={searchTerms}
+
+!heise			https://www.heise.de/suche/?rm=search&q={searchTerms}
+!hpv			!heisepv
+!heisepv		http://www.heise.de/preisvergleich/?fs={searchTerms}
+
+!history		http://www.history.com/search?q={searchTerms}
+
+!hn				!hackernews
+!hnsearch		!hackernews
+!hackernews		https://www.hnsearch.com/search#request/all&q={searchTerms}
+
+!huffpost		http://www.huffingtonpost.com/search.php/?q={searchTerms}
+!huffpost[de]	http://www.huffingtonpost.de/search?q={searchTerms}
+!huffingtonpost	!huffpost
+
+!i				!gimages
+!img			!gimages
+!images			!gimages
+
+!ix				!ixquick
+!ixquick		https://ixquick.com/do/metasearch.pl?q={searchTerms}
+
+!js				!javascript
+!javascript		https://developer.mozilla.org/en/search?q={searchTerms}
+!jquery			http://api.jquery.com/?ns0=1&s={searchTerms}
+!java			https://search.oracle.com/search/search?q={searchTerms}&group=Documentation
+
+!kapi			api.kde.org/mapsearcher.php?class={searchTerms}
+!koran			http://islam.de/13829.php?q={searchTerms}
+
+!lemonde		http://www.lemonde.fr/recherche/?keywords={searchTerms}
+!lenovo			http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/site.workflow:SimpleSiteSearch?q={searchTerms}
+!lh				!lifehacker
+!lifehacker		http://lifehacker.com/search?q={searchTerms}
+!longurl		!urlreveal
+
+!m				!gmaps
+!maps			!gmaps
+!mysql			https://search.oracle.com/search/search?q={searchTerms}&group=MySQL
+
+!market			!gplay
+
+!ms				!microsoft
+!microsoft		http://search.microsoft.com/en-US/results.aspx?form=MSHOME&q={searchTerms}
+!microsoft[de]	http://search.microsoft.com/de-DE/results.aspx?form=MSHOME&q={searchTerms}
+!msdn			http://social.msdn.microsoft.com/Search/en-US?query={searchTerms}
+
+!metager		http://www.metager.de/meta/cgi-bin/meta.ger1?eingabe={searchTerms}
+
+!n				https://news.google.com/news?q={searchTerms}&btnG=Search+News
+!n[de]			https://news.google.de/news?q={searchTerms}&btnG=Search+News
+!news			!n
+
+!oracle			https://search.oracle.com/search/search?q={searchTerms}
+
+!php			http://php.net/manual-lookup.php?pattern={searchTerms}
+
+!pic 			!gimages
+!pics 			!gimages
+!pictures		!gimages
+
+!psql			!postgresql
+!postgresql		http://www.postgresql.org/search/?q={searchTerms}
+
+!pirate			!thepiratebay
+
+!quran			http://quran.com/search?q={searchTerms}
+!qype			!yelp
+!qr				http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={searchTerms}
+!qrdecode		http://zxing.org/w/decode?u={searchTerms} # converts the given qr-image-url to plain text
+
+!r				!reddit
+!reddit			http://www.reddit.com/search?q={searchTerms}
+
+!s				!startpage
+!startpage		https://startpage.com/do/metasearch.pl?query={searchTerms}
+!simages		https://startpage.com/do/metasearch.pl?cat=pics&query={searchTerms}
+
+!searchcode		http://searchcode.com/?q={searchTerms}
+
+!selfhtml		http://de.selfhtml.org/navigation/suche/index.htm?Suchanfrage={searchTerms-ISO-8859-1}
+!selfhtmlwiki	http://wiki.selfhtml.org/wiki/Spezial:Suche?search={searchTerms}
+
+!/.				!slashdot
+!/.j			http://slashdot.jp/index2.pl?fhfilter={searchTerms}
+!slashdot		http://slashdot.org/index2.pl?fhfilter={searchTerms}
+
+!so				http://stackoverflow.com/search?q={searchTerms}
+!stackoverflow	!so
+
+!spon			http://www.spiegel.de/suche/index.html?suchbegriff={searchTerms-ISO-8859-1}
+!sqlite			https://www.sqlite.org/search?q={searchTerms}
+!sz				http://suche.sueddeutsche.de/?query={searchTerms}
+
+!tabs			http://www.ultimate-guitar.com/search.php?s={searchTerms}&w=songs
+!tc				!techcrunch
+!techcrunch		http://techcrunch.com/search/{searchTerms}
+
+!tpb			!thepiratebay
+!thepiratebay 	https://thepiratebay.se/s/?q={searchTerms}
+!torrent		!thepiratebay
+
+!tumblr			http://www.tumblr.com/tagged/{searchTerms}
+
+!tw				!twitter
+!twit			!twitter
+!twitter		https://twitter.com/search?q={searchTerms}
+!tweet			https://twitter.com/intent/tweet?text={searchTerms} # tweet the query
+
+!urlquery		http://urlquery.net/search.php?q={searchTerms}
+!urlreveal		http://www.urlreveal.com/reveal?url={searchTerms} # converts short URL to long
+
+!validate		http://validator.w3.org/check?uri={searchTerms}&charset=%28detect+automatically%29&doctype=Inline&group=0 # validates the given URL
+!video			!youtube
+!vimeo			http://vimeo.com/search?q={searchTerms}
+
+!w				!wikipedia
+!wikipedia		https://en.wikipedia.org/wiki/Special:Search?search={searchTerms}&go=Go
+!wikipedia[de]	https://de.wikipedia.org/wiki/Special:Search?search={searchTerms}&go=Go
+!wt				!wiktionary
+!wikt			!wiktionary
+!wiktionary		https://en.wiktionary.org/wiki/Special:Search?search={searchTerms}&go=Go
+!wiktionary[de]	https://de.wiktionary.org/wiki/Special:Search?search={searchTerms}&go=Go
+
+!wa				!wolframalpha
+!walpha			!wolframalpha
+!wolfram 		!wolframalpha
+!wolframalpha	https://www.wolframalpha.com/input/?i={searchTerms}
+
+!warentest		http://www.test.de/suche/?q={searchTerms}
+!whois			http://whois.domaintools.com/{searchTerms}
+!wired			http://www.wired.com/search?query={searchTerms}
+!wissen			http://www.wissen.de/wissensserver/search?keyword={searchTerms}
+
+!wp				!wordpress
+!wordpress		http://wordpress.org/search/{searchTerms}
+
+!xing			https://www.xing.com/app/search?op=combined;keywords={searchTerms}
+
+!y				!yahoo
+!yahoo			http://search.yahoo.com/search?p={searchTerms}
+!yi				!yimages
+!yimages		http://images.search.yahoo.com/search/images?p={searchTerms}
+!yf				!yfinance
+!yfinance		http://finance.yahoo.com/lookup?s={searchTerms}
+!ym				!ymaps
+!ymaps			http://maps.yahoo.com/#q={searchTerms}
+
+!yacy			http://search.yacy.net/yacysearch.html?query={searchTerms}
+
+!yandex			https://yandex.ru/yandsearch?text={searchTerms}
+!yandexen		https://yandex.com/yandsearch?text={searchTerms}
+!yandexmaps		http://maps.yandex.ru/?text={searchTerms}
+!yc				!hackernews
+
+!yelp			http://www.yelp.com/search?find_desc={searchTerms}
+
+!yt				!youtube
+!youtube		https://www.youtube.com/results?search_query={searchTerms}
+
+!zdnet			http://www.zdnet.com/search?q={searchTerms}
+!zeit			http://www.zeit.de/suche/index?q={searchTerms}
+

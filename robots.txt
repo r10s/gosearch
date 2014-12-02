@@ -1,0 +1,3 @@
+# as we're a search engine ourselves, normally, it does not make sense to get indexed by other engines
+User-agent: *
+Disallow: /

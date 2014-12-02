@@ -1,0 +1,12 @@
+#
+# For security reasons, the `/data` directory must not be accessible by HTTP; 
+# this file disallows any access when using apache web servers (a better 
+# approach might be, to move the data directory outside the htdocs tree).
+#
+# Moreover, please make sure, the `/data` directory can be written from PHP.
+#
+# NB: `/program` and `/config` should be accessible from outside, as icons, css
+# and js are read from there. 
+#
+order deny,allow
+deny  from all
