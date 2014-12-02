@@ -7,11 +7,11 @@ Go Search Engine - Zero Click Base Class
 user types "2*2" a zeroclick module may display "4" immediately.
 
 As a rule of thumb, every single zeroclick module should only be very few KB in
-size, you can treat 10 KB as a maximum for code _and_ data.  If a module is 
+size, say 50 KB as a maximum for code _and_ data.  If a module is 
 larger it must really give enourmous benefits to a majority of users!
 
 Technically, a zeroclick box is a class derived from Zeroclick_Base and should
-implement least renderContent().  renderContent() then should check the query in 
+implement at least renderContent().  renderContent() then should check the query in 
 $this->q _carefully_ - if in doubt, a query can also have another meaning, do 
 not match!  However, if the query is fine, renderContent() should return just a 
 line of HTML to display.  If it decides not handle the query just an empty 
@@ -26,7 +26,7 @@ How is a zeroclick-object being created? And which?
 
 - so, we decided to hardcode the stuff in Action_Search::renderZeroclick() - 
   this function can make checks much faster (eg. by putting everything starting
-  with a number togeher) and we can also react to conflichts there.
+  with a number togeher) and we can also react to conflicts there.
 
 - most times, Action_Search::renderZeroclick() will not render anything - but in
   this case none of the zeroclick files get loaded - not even this file!
