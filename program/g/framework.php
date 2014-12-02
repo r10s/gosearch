@@ -27,7 +27,7 @@ define('G_PROGRAM_FULL_NAME',	'Go Search Engine');
 define('G_PROGRAM_SHORT_NAME',	'Go'); 
 define('G_PROGRAM_ID',			'go');			// should be only a-z, no special characters, no numers
 define('G_USER_AGENT',			'gobotbeta');	// when out of beta, we'll change this to `gobot`
-define('G_VERSION',				0.13);			// written to the database files, must be a floating point number so that larger/small comparisons works
+define('G_VERSION',				0.14);			// written to the database files, must be a floating point number so that larger/small comparisons works
 
 // load optional config.php
 if( @file_exists(G_DOCUMENT_ROOT . '/config/config.php') ) {
