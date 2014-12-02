@@ -199,7 +199,7 @@ class G_Html
 			$title = $param['title'];
 		}
 		$title .= $title != ''? ' - ' : '';
-		$title .= G_PROGRAM_NAME;
+		$title .= G_PROGRAM_FULL_NAME;
 
 		// set caching (currently (31.10.2013), we do not use header("cache...") as we think, PHP makes a good job here)
 		if( $this->forceCachingVal )
@@ -222,7 +222,7 @@ class G_Html
 		}
 		
 		$ret .=		"<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"".G_Html::getFavicon()."\" />\n"
-			.		"<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"?a=opensearch\" title=\"" . G_PROGRAM_NAME /*=OpenSearchDescription->ShortName*/. "\" />\n"
+			.		"<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"?a=opensearch\" title=\"" . G_PROGRAM_FULL_NAME /*=OpenSearchDescription->ShortName*/. "\" />\n"
 			.	"</head>\n";
 			
 		$bodyclass = $param['bodyclass']? " class=\"{$param['bodyclass']}\"" : '';
@@ -233,7 +233,7 @@ class G_Html
 		// Navigation bar how-to: http://www.w3schools.com/css/css_navbar.asp
 		
 		$a = strval($_GET['a']);
-		$items_l[] = array('url'=>'?q='.urlencode($_GET['q']), 			'descr'=>G_PROGRAM_NAME.' '.G_Local::_('menu_websearch'),	'sel'=>$a==''); 
+		$items_l[] = array('url'=>'?q='.urlencode($_GET['q']), 			'descr'=>G_PROGRAM_SHORT_NAME.' '.G_Local::_('menu_websearch'),	'sel'=>$a==''); 
 		//$items_l[] = array('url'=>'?a=img&q='.urlencode($_GET['q']),	'descr'=>G_Local::_('menu_imgsearch'),								'sel'=>$a=='img');
 		//$items_l[] = array('url'=>'?a=maps&q='.urlencode($_GET['q']),	'descr'=>G_Local::_('menu_maps'),									'sel'=>$a=='maps');
 		$items_l[] = array('url'=>'?a=help', 								'descr'=>G_Local::_('menu_help'),									'sel'=>$a=='help');
@@ -283,7 +283,7 @@ class G_Html
 				}
 				
 				// program version etc.
-				$ret .= '&copy; ' . G_Html::renderA('?a=about', G_PROGRAM_NAME . ' contributors ');
+				$ret .= '&copy; ' . G_Html::renderA('?a=about', G_PROGRAM_FULL_NAME . ' contributors ');
 				
 				if( $_GET['a']!='setup' )
 				{

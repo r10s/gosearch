@@ -17,16 +17,16 @@ class Action_About extends G_Html
 	function handleRequest()
 	{
 		// render page 
-		echo $this->renderHtmlStart(array('title'=>G_PROGRAM_NAME . ' contributors'));
+		echo $this->renderHtmlStart(array('title'=>G_PROGRAM_FULL_NAME . ' contributors'));
 		
 		
-			echo G_Html::renderH1(G_PROGRAM_NAME . ' contributors');
-			echo G_Html::renderP('Program Version: '. G_PROGRAM_NAME . ' ' . G_VERSION);
+			echo G_Html::renderH1(G_PROGRAM_FULL_NAME . ' contributors');
+			echo G_Html::renderP('Program Version: '. G_PROGRAM_FULL_NAME . ' ' . G_VERSION);
 			echo G_Html::renderP('Main program design and development: Björn Petersen');
 			echo G_Html::renderP('Like this program? Become a part of the free search network and install it on your server.<br />'
 								.'The Installation is very easy and nothing but a recent PHP-Installation is needed.');
 			echo G_Html::renderP('The program will be released under a GPL-like license, however, currently it is not clear which one to take.');
-			echo G_Html::renderP(G_PROGRAM_NAME . ' uses 
+			echo G_Html::renderP(G_PROGRAM_FULL_NAME . ' uses 
 										<a href="http://www.php.net/">PHP</a>,
 										<a href="http://www.sqlite.org/">sqlite</a>,
 										<a href="http://jquery.com/">jQuery</a>.

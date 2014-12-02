@@ -80,7 +80,7 @@ class Action_Search extends G_Html
 			{
 				// many space around search
 				
-				$ret .= G_Html::renderH1('<span>' . G_PROGRAM_NAME . ' '. G_Local::_($param['h1']) . '</span>'); // <span>..</span> may help to place a logo in the css
+				$ret .= G_Html::renderH1('<span>' . G_PROGRAM_SHORT_NAME . ' ' . G_Local::_($param['h1']) . '</span>'); // <span>..</span> may help to place a logo in the css
 			}
 			
 			$ret .= "<form action=\"\" method=\"get\">";

@@ -22,8 +22,8 @@ class Action_Opensearch
 		echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		echo "<OpenSearchDescription xmlns=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:moz=\"http://www.mozilla.org/2006/browser/search/\">\n";
 		
-			echo "<ShortName>" . G_PROGRAM_NAME . "</ShortName>\n";
-			echo "<Description>" . G_Local::_('search_with_x', G_PROGRAM_NAME) . "</Description>\n";
+			echo "<ShortName>" . G_PROGRAM_SHORT_NAME . "</ShortName>\n";
+			echo "<Description>" . G_Local::_('search_with_x', G_PROGRAM_FULL_NAME) . "</Description>\n";
 			echo "<InputEncoding>UTF-8</InputEncoding>\n";
 			echo "<Image height=\"16\" width=\"16\" type=\"image/x-icon\">" . $host . G_Html::getFavicon(). "</Image>\n";
 			
