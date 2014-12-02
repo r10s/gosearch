@@ -20,8 +20,8 @@ Installation
 ------------
 
 1. Define where the search engine should be accessed on your server, we would 
-   encourage you to use a subdomain as "go.yourdomain.tld".  However, a 
-   subdirectory as "yourdomain.tld/go/" will work as well.
+   encourage you to use a subdomain as "go.yourdomain.com".  However, a 
+   subdirectory as "yourdomain.com/go/" will work as well.
 
 2. Unzip the downloaded file to the directory corresponding to the place
    defined above; FTP may help with this purpose.  Take care, the directory 
