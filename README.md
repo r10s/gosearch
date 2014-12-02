@@ -2,7 +2,11 @@
 Go Search Engine
 ================
 
-A distributed search engine.
+A distributed search engine.  Open source, free, non-tracking, slow - and not
+yet ready.  The program will need lots of additional development; currently
+it is not clear if will work at all.
+
+Howver, the first steps are donw and the crawler seems to hang less often ;-)
 
 
 Requirements
