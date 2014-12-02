@@ -19,11 +19,11 @@ Installation
    encourage you to use a subdomain as "go.yourdomain.tld".  However, a 
    subdirectory as "www.yourdomain.tld/go/" will work as well.
 
-2. Unzip the distributed file to the directory corresponding to the place
+2. Unzip the downloaded file to the directory corresponding to the place
    defined above; FTP may help with this purpose.  Take care, the directory 
    structure stays intact.  The destination folder should contain the
-   directories `config`, `data` and `program` as well as the  files `index.php` 
-   and `robots.txt` plus this readme.
+   directories `config`, `data` and `program` as well as the files `index.php`, 
+   `robots.txt`, `LICENSE.md` and this readme.
    
 3. Make sure, the directory /data is **writable from PHP**, again, FTP may help 
    with this purpose.
