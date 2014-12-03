@@ -29,7 +29,7 @@ Installation
    directories `config`, `data` and `program` as well as the files `index.php`, 
    `robots.txt`, `LICENSE.md` and this readme.
    
-3. Make sure, the directory /data is **writable from PHP**, again, FTP may help 
+3. Make sure, the directory `data` is **writable from PHP**, again, FTP may help 
    with this purpose.
 
 4. Open your search engine in the browser and click onto "login" to create an
@@ -41,5 +41,5 @@ That's all. You can now start configuring and using your search engine.
 Updates
 -------
 
-For updates, just replace the `/program` folder with the new version.
+For updates, just replace the directory `program` with the new version.
 
